@@ -1,5 +1,6 @@
 # JupyterLab
 Customized JupyterLab
+```txt
 Installed Soft:
   nodejs18.x 
   npm
@@ -9,6 +10,7 @@ Installed Soft:
   python3
   python3-pip
   sudo
+  
 Install jupyterlab3 and plugins:
   jupyterlab-language-pack-zh-CN
   jupyterlab-lsp==3.2.0 jupyter-lsp==1.1.1
@@ -16,6 +18,7 @@ Install jupyterlab3 and plugins:
   python-language-server[all]
   black isort
   ipydrawio
+  
 Install common libraries:
   pandas
   numpy
@@ -26,3 +29,4 @@ Install common libraries:
   ipympl
   
 Export Port:8888
+```
