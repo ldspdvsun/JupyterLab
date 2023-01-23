@@ -12,7 +12,7 @@ RUN mkdir /opt/notebooks \
 && apt upgrade -y \
 && apt-get update -y \
 && apt-get upgrade -y \
-&& apt install -y npm vim curl wget python3 python3-pip sudo git build-essential -y \
+&& apt install -y npm vim curl wget python3 python3-pip sudo gdb git build-essential -y \
 && alias python=python3 \
 && curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - \
 && sudo apt-get install -y nodejs
