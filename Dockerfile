@@ -12,10 +12,10 @@ RUN mkdir /opt/notebooks \
 && apt upgrade -y \
 && apt-get update -y \
 && apt-get upgrade -y \
-&& apt install -y nodejs npm vim curl wget python3 python3-pip sudo -y \
+&& apt install -y npm vim curl wget python3 python3-pip sudo git build-essential -y \
 && alias python=python3 \
 && curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - \
-&& apt-get install -y nodejs
+&& sudo apt-get install -y nodejs
 
 
 # 安装jupyterlab3及插件，并生成配置文件
