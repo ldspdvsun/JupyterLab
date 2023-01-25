@@ -33,6 +33,7 @@ RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ "jupyterlab" \
 # 安装常用库
 RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ pandas \
 && pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ numpy \
+&& pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ plotly \
 && pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ matplotlib \
 && pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ tqdm \
 && pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ scikit-learn \
