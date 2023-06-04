@@ -1,6 +1,7 @@
 # JupyterLab
 
 Customized JupyterLab
+
 ```txt
 Installed Soft:
   nodejs18.x 
