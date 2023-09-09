@@ -27,7 +27,8 @@ RUN pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ "jupyterlab" \
 && chmod -R 777 /root/.jupyter/jupyter_lab_config.py \
 && chmod -R 777 /opt/notebooks \
 && pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ jupyterlab-language-pack-zh-CN \
-&& pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ jupyterlab-lsp==3.2.0 jupyter-lsp==1.1.1 \
+&& pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ 'jupyterlab>=4.0.0,<5.0.0a0' jupyterlab-lsp \
+&& pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ 'python-lsp-server[all]' \
 && pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ jupyterlab_code_formatter \
 && pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ python-language-server[all] \
 && pip install -i https://pypi.tuna.tsinghua.edu.cn/simple/ black isort \
@@ -59,7 +60,7 @@ docker run -d \
 -e JUPYTER_ENABLE_LAB=yes \
 -v /data/docker/jupyter:/opt/notebooks \
 --restart=always \
---name JupyterLab jupyterlab:latest
+--name JupyterLab jupyterlab:0909
 ```
 
 ## 通过token设置登录密码
